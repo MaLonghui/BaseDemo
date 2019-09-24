@@ -50,9 +50,9 @@ public class RetrofitManager {
                 if (null==okHttpClient){
                     okHttpClient = new OkHttpClient.Builder()
                             .addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
-                            .connectTimeout(3000,TimeUnit.SECONDS)
-                            .writeTimeout(3000,TimeUnit.SECONDS)
-                            .readTimeout(3000,TimeUnit.SECONDS)
+                            .connectTimeout(300,TimeUnit.SECONDS)
+                            .writeTimeout(300,TimeUnit.SECONDS)
+                            .readTimeout(300,TimeUnit.SECONDS)
                             .build();
                 }
             }
